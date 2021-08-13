@@ -16,54 +16,54 @@ export default function App() {
 
     function bmiCalculate() {
       data.map((val)=>
-      val.bmivalue = (val.WeightKg / (val.HeightCm/100 * val.HeightCm/100)).toFixed(2))
+      val.bmiValue = (val.WeightKg / (val.HeightCm/100 * val.HeightCm/100)).toFixed(2))
     }
     
     function getCategory() {
       data.map((val)=>{
-        if (val.bmivalue < 18.5) {
-          val.cat =  "Underweight";
+        if (val.bmiValue < 18.5) {
+          val.category =  "Underweight";
         }
-        if (val.bmivalue >= 18.5 && val.bmivalue < 24.9) {
-          val.cat = "Normal weight";
+        if (val.bmiValue >= 18.5 && val.bmiValue < 24.9) {
+          val.category = "Normal weight";
         }
-        if (val.bmivalue >= 25 && val.bmivalue < 29.9) {
-          val.cat =  "Overweight";
+        if (val.bmiValue >= 25 && val.bmiValue < 29.9) {
+          val.category =  "Overweight";
         }
-        if (val.bmivalue >= 30 && val.bmivalue < 34.9) {
-          val.cat =  "Moderately obese";
+        if (val.bmiValue >= 30 && val.bmiValue < 34.9) {
+          val.category =  "Moderately obese";
         }
-        if (val.bmivalue >= 35 && val.bmivalue < 39.9) {
-          val.cat =  "Severely obese";
+        if (val.bmiValue >= 35 && val.bmiValue < 39.9) {
+          val.category =  "Severely obese";
         }
-        if (val.bmivalue >= 40) {
-          val.cat = "Very severely obese";
+        if (val.bmiValue >= 40) {
+          val.category = "Very severely obese";
         } 
-        return val;
+        return val
       })
     }
 
-    const count = `${ " Number of person overweight is:" + data.filter((val)=>val.cat ===  "Overweight" ).length }`; 
+    const count = `${ " Number of person overweight is:" + data.filter((val)=>val.category ===  "Overweight" ).length }`; 
   
     function getHealthRisk() {
        data.map(val=>{
-         if (val.bmivalue < 18.5) {
-           val.hr = "Malnutrition risk";
+         if (val.bmiValue < 18.5) {
+           val.healthRisk = "Malnutrition risk";
           }
-         if (val.bmivalue>= 18.5 && val.bmivalue < 24.9) {
-           val.hr ="Low risk";
+         if (val.bmiValue>= 18.5 && val.bmiValue < 24.9) {
+           val.healthRisk ="Low risk";
           }
-         if (val.bmivalue >= 25 && val.bmivalue < 29.9) {
-           val.hr ="Enhanced risk";
+         if (val.bmiValue >= 25 && val.bmiValue < 29.9) {
+           val.healthRisk ="Enhanced risk";
           }
-         if (val.bmivalue>= 30 && val.bmivalue < 34.9) {
-           val.hr = "Medium risk";
+         if (val.bmiValue>= 30 && val.bmiValue < 34.9) {
+           val.healthRisk = "Medium risk";
           }
-         if (val.bmivalue>= 35 && val.bmivalue < 39.9) {
-           val.hr = "High risk";
+         if (val.bmiValue>= 35 && val.bmiValue < 39.9) {
+           val.healthRisk = "High risk";
           }
-         if (val.bmivalue>= 40) {
-           val.hr = "Very high risk";
+         if (val.bmiValue>= 40) {
+           val.healthRisk = "Very high risk";
           }
       return val
     })
@@ -85,9 +85,9 @@ export default function App() {
             <td>{row.Gender}</td>
             <td>{row.HeightCm}</td>
             <td>{row.WeightKg}</td>
-            <td>{row.bmivalue}</td>
-            <td>{row.cat}</td>
-            <td>{row.hr}</td>
+            <td>{row.bmiValue}</td>
+            <td>{row.category}</td>
+            <td>{row.healthRisk}</td>
           </tr>
         ))}
       </table>
