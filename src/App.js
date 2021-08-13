@@ -1,6 +1,7 @@
 import "./App.css";
 
 export default function App() {
+  //Just change the second data
   const data = [
     { Gender: "Male",   HeightCm: 171, WeightKg: 96 },
     { Gender: "Male",   HeightCm: 175, WeightKg: 85 },
@@ -43,7 +44,7 @@ export default function App() {
       })
     }
 
-    const count = `${ " Number of person overweight is:" + data.filter((val)=>val.category ===  "Overweight" ).length }`; 
+    const count = `${ " Number of person whose weights are equal to overweight is: " + data.filter((val)=>val.category ===  "Overweight" ).length }`; 
   
     function getHealthRisk() {
        data.map(val=>{
