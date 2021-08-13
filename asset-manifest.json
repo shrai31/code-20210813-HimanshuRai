@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/code-20210813-HimanshuRai/static/css/main.b9158cf7.chunk.css",
+    "main.js": "/code-20210813-HimanshuRai/static/js/main.e412ce16.chunk.js",
+    "main.js.map": "/code-20210813-HimanshuRai/static/js/main.e412ce16.chunk.js.map",
+    "runtime-main.js": "/code-20210813-HimanshuRai/static/js/runtime-main.0729440e.js",
+    "runtime-main.js.map": "/code-20210813-HimanshuRai/static/js/runtime-main.0729440e.js.map",
+    "static/js/2.486117fb.chunk.js": "/code-20210813-HimanshuRai/static/js/2.486117fb.chunk.js",
+    "static/js/2.486117fb.chunk.js.map": "/code-20210813-HimanshuRai/static/js/2.486117fb.chunk.js.map",
+    "static/js/3.bef000ed.chunk.js": "/code-20210813-HimanshuRai/static/js/3.bef000ed.chunk.js",
+    "static/js/3.bef000ed.chunk.js.map": "/code-20210813-HimanshuRai/static/js/3.bef000ed.chunk.js.map",
+    "index.html": "/code-20210813-HimanshuRai/index.html",
+    "static/css/main.b9158cf7.chunk.css.map": "/code-20210813-HimanshuRai/static/css/main.b9158cf7.chunk.css.map",
+    "static/js/2.486117fb.chunk.js.LICENSE.txt": "/code-20210813-HimanshuRai/static/js/2.486117fb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0729440e.js",
+    "static/js/2.486117fb.chunk.js",
+    "static/css/main.b9158cf7.chunk.css",
+    "static/js/main.e412ce16.chunk.js"
+  ]
+}
