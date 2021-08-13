@@ -39,7 +39,7 @@ export default function App() {
         if (val.bmivalue >= 40) {
           val.cat = "Very severely obese";
         } 
-        return val
+        return val;
       })
     }
 
